@@ -13,7 +13,7 @@
 - Obsidian Dashboard — real-time status viewer
 
 ## Architecture
-\\\
+`
 Gmail/WhatsApp/Files
         |
    Watcher Scripts (Python)
@@ -24,8 +24,8 @@ Gmail/WhatsApp/Files
         |
    Plans/ + Pending_Approval/ + Dashboard.md
         |
-   Human Approval → Done/
-\\\
+   Human Approval --> Done/
+`
 
 ## Tech Stack
 - Brain: Claude Code
@@ -36,7 +36,7 @@ Gmail/WhatsApp/Files
 - OS: Windows 11
 
 ## Folder Structure
-\\\
+`
 AI_Employee_Vault/
 ├── Needs_Action/       # Pending tasks for Claude
 ├── Plans/              # Claude generated plans
@@ -50,24 +50,24 @@ AI_Employee_Vault/
 ├── Drop_Here/          # Drop files to trigger AI
 ├── Dashboard.md        # Live status
 └── Company_Handbook.md # AI rules of engagement
-\\\
+`
 
 ## Setup
 
 ### Prerequisites
-\\\
+`
 Python 3.13+
 Node.js v24+
 Claude Code
 Obsidian v1.10.6+
 Google Cloud account (Gmail API)
-\\\
+`
 
 ### Install Dependencies
-\\\powershell
+`powershell
 pip install watchdog playwright schedule google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
 python -m playwright install chromium
-\\\
+`
 
 ### Gmail Setup
 1. Google Cloud Console mein project banao
@@ -76,7 +76,7 @@ python -m playwright install chromium
 4. credentials.json vault mein rakho
 
 ### Run
-\\\powershell
+`powershell
 # Terminal 1 - File Watcher
 python filesystem_watcher.py
 
@@ -92,7 +92,7 @@ python scheduler.py
 # Terminal 5 - Claude Code
 cd AI_Employee_Vault
 claude
-\\\
+`
 
 ## How It Works
 1. Watchers continuously monitor Gmail, WhatsApp, and local files
@@ -104,7 +104,15 @@ claude
 7. Completed tasks move to Done/
 
 ## Screenshots
+
+### Obsidian Dashboard
 ![Dashboard](obsidian_dashboard.png)
+
+### Screenshot 1
+![Screenshot1](./screenshot1.png)
+
+### Screenshot 2
+![Screenshot2](./screenshot2.png)
 
 ## Security
 - No credentials stored in code
@@ -116,12 +124,3 @@ claude
 Built for: Personal AI Employee Hackathon 0
 Tier: Silver
 By: Haider
-
-## More Screenshots
-
-### Screenshot 1
-![Screenshot1](./screenshot1.png)
-
-### Screenshot 2
-![Screenshot2](./screenshot2.png)
-
