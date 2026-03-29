@@ -116,3 +116,12 @@ claude
 Built for: Personal AI Employee Hackathon 0
 Tier: Silver
 By: Haider
+
+## More Screenshots
+
+### Screenshot 1
+![Screenshot1](./screenshot1.png)
+
+### Screenshot 2
+![Screenshot2](./screenshot2.png)
+
